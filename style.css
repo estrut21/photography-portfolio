@@ -196,7 +196,7 @@ body {
    .full-image-gallery {
    column-count: 3;
    column-gap: 20px;
-   max-width: 1400px;
+   max-width: 1300px;
     margin: 0 auto;
    }
 
@@ -209,8 +209,6 @@ body {
     break-inside: avoid;
    }
 
-
-    
     @media (max-width: 900px) {
         .full-image-gallery {
            column-count: 2;
@@ -222,3 +220,38 @@ body {
               column-count: 1;
         }
     }
+
+    .full-image-gallery img {
+    cursor: pointer;
+    }
+
+   .lightbox {
+   display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 30px;
+   }
+
+   .lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+   }
+
+   .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 42px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+   }
+
+
+
