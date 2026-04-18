@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"  />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title> Events | Liz Strut Photography </title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <a href="index.html"> Home </a>
+                <a href="gallery.html"> Gallery </a>
+                <a href="about.html"> About </a>
+                <a href="contact.html"> Contact </a>
+                <a href="events.html"> Events </a>
+            </nav>
+        </header>
+
+        <main class="gallery-collection-page">
+            <h1> Events </h1>
+
+            <div class="full-image-gallery">
+                <img src="asset/Lilly1.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/EarthDay1.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/orientation.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/orientation2.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/rachel1.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/rachel2.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Lilly2.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/EarthDay2.jpg onclick="openLightbox (this.src)" />
+                <img src="asset/rachel3.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/EarthDay4.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/rachel4.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Lilly3.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/rachel5.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/rachel6.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Lilly4.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/rachel7.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/orientation3.jpg" onclick="openLightbox (this.src)" />
+                
+            
+            </div>
+        </main>
+
+      <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+           <img id="lightbox-img" class="lightbox-content" alt="">
+        <script>
+            function openLightbox(src) {
+                document.getElementById("lightbox").style.display= "flex";
+                document.getElementById("lightbox-img").src = src;
+            }
+
+            function closeLightbox(event) {
+                document.getElementById("lightbox") .style.display = "none";
+}
+        </script>
+          
+            
+    </body>
+</html>
