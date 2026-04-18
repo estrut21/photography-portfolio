@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"  />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title> Sports | Liz Strut Photography </title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <a href="index.html"> Home </a>
+                <a href="gallery.html"> Gallery </a>
+                <a href="about.html"> About </a>
+                <a href="contact.html"> Contact </a>
+                <a href="events.html"> Events </a>
+                <a href="sports.html"> Sports </a>
+            </nav>
+        </header>
+
+        <main class="gallery-collection-page">
+            <h1> Sports </h1>
+
+            <div class="full-image-gallery">
+                <img src="asset/Cheer.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/fancy1.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/fancy2.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Cheer2.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Cheer3.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/fancy3.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/cheer4.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/fancy4.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/cheer5.jpg"onclick="openLightbox (this.src)" />
+                <img src="asset/fancy5.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/cheer6.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/fancy6.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/fancy7.jpg" onclick="openLightbox (this.src)" />
+               
+                
+            
+            </div>
+        </main>
+
+      <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+           <img id="lightbox-img" class="lightbox-content" alt="">
+        <script>
+            function openLightbox(src) {
+                document.getElementById("lightbox").style.display= "flex";
+                document.getElementById("lightbox-img").src = src;
+            }
+
+            function closeLightbox(event) {
+                document.getElementById("lightbox") .style.display = "none";
+}
+        </script>
+          
+            
+    </body>
+</html>
+ 
