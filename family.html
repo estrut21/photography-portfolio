@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"  />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title> Family | Liz Strut Photography </title>
+    <link rel="stylesheet" href="style.css" />
+     </head>
+     <body>
+       
+        <header>
+            <nav> 
+                <a href="index.html"> Home </a>
+                <a href="gallery.html"> Gallery </a>
+                <a href="about.html"> About </a>
+                <a href="contact.html"> Contact </a>
+            </nav>
+        </header>
+
+        <main class="gallery-collection-page">
+            <h1> Family </h1>
+
+            <div class="full-image-gallery">
+                <img src="asset/Ahwell1.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell2.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell3.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell4.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell5.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell6.jpg " onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell7.jpg" onclick="openLightbox (this .src)" />
+                <img src="asset/Ahwell8.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell9.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell10.jpg" onclick="openLightbox (this.src)" />
+                <img src="asset/Ahwell11.jpg" onclick="openLightbox (this.src)" />
+            </div>
+        </main>
+
+         <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+           <img id="lightbox-img" class="lightbox-content" alt="">
+        <script>
+            function openLightbox(src) {
+                document.getElementById("lightbox").style.display= "flex";
+                document.getElementById("lightbox-img").src = src;
+            }
+
+            function closeLightbox(event) {
+                document.getElementById("lightbox") .style.display = "none";
+}
+        </script>
+          
+
+    </body>
+</html>
