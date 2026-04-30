@@ -333,4 +333,35 @@ body {
     align-self: flex-start;
    }
 
+   .contact {
+    padding: 70px 20px;
+   }
+
+   .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+   }
+
+   form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+   }
+
+   input, textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+   }
+
+   button {
+    padding: 12px;
+    background-color: #1a2a44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+   }
+
    
